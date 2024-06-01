@@ -1,0 +1,110 @@
+html{
+
+    background-image: url("/images/space.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+.topnav{
+    overflow: hidden;
+    background-color: #333;
+}
+.topnav a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+    background-color: rgb(255, 151, 113);
+    color: black;
+    transition: .2s;
+}
+.topnav a.active{
+    background-color:orangered;
+    color: white;
+}
+.topnav-right{
+    float:right;
+
+}
+.content{
+    margin: auto;
+    width: 60%;
+    color:rgb(56, 0, 0);
+    animation: infinite;
+    animation-name: backgroundanimation;
+    animation-duration: 40s;
+    padding: 10px;
+    margin-top: 10px;
+    border-style: ridge;
+
+}
+.container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+li{
+    transition: .3s;
+    margin: 10px;
+}
+h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.face {
+    width: 400px;
+    height: 200px;
+    margin-left:auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 20%;
+    border-style: ridge;
+
+}
+.star{
+    position:absolute;
+    width: 5px;
+    height: 5px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    animation: fall 2s linear forwards;
+    z-index: 2;
+}
+@keyframes fall {
+    0%{
+        transform: translateY(-5vh) translateX(0);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(90vh) translateX(var(--random-end-x));
+        opacity: 0;
+    }
+    
+}
+
+@keyframes backgroundanimation {
+    0% {background-color: aliceblue;}
+    10%{background-color: antiquewhite;}
+    20%{background-color: whitesmoke;}
+    30%{background-color: lightgrey;}
+    40%{background-color: white;}
+    50%{background-color: gainsboro;}
+    60%{background-color: aliceblue;}
+    70%{background-color: antiquewhite;}
+    80%{background-color: whitesmoke;}
+    90%{background-color: lightgrey;}
+    100%{background-color: white;}
+    
+}
+li:hover
+{
+    font-size: 40px;
+
+}
