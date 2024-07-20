@@ -1,5 +1,6 @@
 html{
-
+    height: 100%;
+    width: 100%;
     background-image: url("/images/space.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -41,6 +42,24 @@ html{
     margin-top: 10px;
     border-style: ridge;
 
+}
+.content2{
+    margin:auto;
+    height: 60%;
+    width: 60%;
+    color:rgb(255, 255, 255);
+    animation: infinite;
+    animation-duration: 40s;
+    padding: 10px;
+    margin-top: 10px;
+    
+    text-align: center;
+   
+}
+.resizedimage{
+    max-height: 500px;
+    width: auto;
+    height: auto;
 }
 .container{
     width: 100%;
